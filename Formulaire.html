@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="formulaire.css" />
+    <script src="datepicker/queryajax.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|EB+Garamond|Nanum+Myeongjo|Noticia+Text&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="datepicker/bootstrap.css" />
+    <link rel="stylesheet" href="datepicker/datpicker.css" />
+    <script src="datepicker/datpicker.js"></script>
+    <title>Formulaire</title>
+    <script>
+        $(function () {
+            $('.dates #user1').datepicker({
+                'format': 'yyyy-mm-dd',
+                'autoclose': true
+            });
+        });
+        function move() {
+            var get = document.getElementById("get").value;
+            document.getElementById("put").value = get;
+
+        }  
+    </script>
+</head>
+
+
+
+<body>
+
+    <form>
+        <nav class="form_style">
+                <h1 class="title">Sign Up</h1>
+            <div class="names">
+                <ul class="first-contenir">
+                    <li class="nammargin">
+                        <label class="text-1">First Name<span class="required">*</span>
+                        
+                            <input type="text" name="firstName" placeholder="first Name" class="chnom" />
+                        </label>
+                    </li>
+
+                </ul>
+                <ul class="first-contenir">
+                    <li class="nammargin">
+                        <label class="text-1">Last Name<span class="required">*</span>
+                            
+                            <input type="text" name="lastName" placeholder="Last Name" class="cham-1"/>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <ul class="first-contenir">
+                <li>
+                    <label class="text-2">Username<span class="required">*</span></label>
+                </li>
+                <li>
+                    <input type="text" name="username" placeholder="username" class="champ" />
+                </li>
+            </ul>
+            <ul class="first-contenir">
+                <li>
+                    <label class="text-8">Email <span class="required">*</span></label>
+                </li>
+                <li>
+                    <input type="email" name="email" placeholder="email"  class="champ"/>
+                </li>
+            </ul>
+            <ul class="first-contenir">
+                <li>
+                    <label class="text-9">Confirm email <span class="required">*</span></label>
+                </li>
+                <li>
+                    <input type="email" name="email" placeholder="email"  class="champp"/>
+                </li>
+            </ul>
+            <ul class="first-contenir">
+                <li>
+                    <label class="text-4">Password <span class="required">*</span></label>
+                </li>
+                <li>
+                    <input type="text" name="username" placeholder="username"  class="champ"/>
+                </li>
+            </ul>
+            <ul class="first-contenir">
+                <li>
+                    <label class="text-6">Confirm Password <span class="required">*</span></label>
+                </li>
+                <li>
+
+                    <input type="text" name="username" placeholder="username"  class="champ"/>
+                </li>
+            </ul>
+            <div class="choiceSubj">
+
+            <ul class="first-contenir">
+                <li>
+
+                    <input type="radio" name="gender" value="male" checked> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                    <input type="checkbox" name="gender" value="other"> Other
+                </li>
+
+            </ul>
+            <ul class="first-contenir">
+                <li>
+                    <label class="text-1">Subject</label>
+
+                </li>
+                <li>
+
+                    <select name="field4" class="field-select" id="selectechamp">
+                        <option value="Advertise" class="option">Advertise</option>
+                        <option value="Partnership" class="option">Partnership</option>
+                        <option value="General Question" class="option">General</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+            <ul class="first-contenir">
+                <li>
+                    <label class="text-1">Date of birth </label>
+                </li>
+                <li>
+                    <div class="dates">
+                        <input type="text" autocomplete="off" id="user1" class="" placeholder="yyyy-mm-dd" />
+                    </div>
+                </li>
+            </ul>
+            <ul class="first-contenir">
+
+                <li>
+                    <label class="text-1">Your Message </label>
+
+                </li>
+
+                <li>
+                    <textarea name="field5" id="field5" class="field-textarea">
+
+                            </textarea>
+                </li>
+            </ul>
+            <ul class="first-contenir">
+                <li>
+                    <input type="color" id="send" oninput="result.value = send.value" class="text-10" />
+                    <input type="text" id="result" />
+                </li>
+            </ul>
+            <ul class="first-contenir">
+                <li>
+                    <label class="text-14">Range (1 to 100):</label>
+                </li>
+
+                <li>
+                    <input type="range" name="range" min="1" max="100" id="get" onchange="move()" class="text-1" />
+                </li>
+
+                <li>
+                    <input type="text" id="put" />
+                </li>
+            </ul>
+            <ul class="first-contenir2">
+                <li>
+                    <input type="submit" value="Submit" onclick="alert('Votre compte a bien était crée')" class="submit" />
+                </li>
+            </ul>
+
+        </nav>
+    </form>
+
+</body>
+
+</html>

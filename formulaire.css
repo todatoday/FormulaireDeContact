@@ -1,0 +1,184 @@
+
+/*
+
+
+    font-family: 'Dancing Script', cursive;
+
+    font-family: 'EB Garamond', serif;
+
+    font-family: 'Noticia Text', serif;
+
+    font-family: 'Nanum Myeongjo', serif;
+
+
+*/
+*{
+
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    color: black;
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgba(53, 44, 44, 0), rgba(134, 111, 35, 0.712)), url("image/voyage.jpg");
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    background-size: 100%;
+    background-attachment: fixed;
+
+ 
+}
+form{
+    margin-top: 20px;
+}
+/*margin: bottom left right top*/
+.title{
+    text-align: center;
+    font-weight: bold;
+    margin: 40px 0px 55px 20px;
+}
+.form_style{
+    font-size: 18px;
+   background-color: rgba(300, 300, 300, 0.6);
+  /* background-color: rgba(195, 108, 32, 0.7);*/
+   
+    padding-top: 40px;
+    width: 900px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+   
+    
+}
+.chnom{
+    margin-left: 68px;
+    background-color: #F2F0F0;
+    border-radius: 5px;
+        
+} 
+
+.cham-1{
+    margin-left: 50px;
+    border-radius: 5px;
+    background-color: #F2F0F0;
+}
+nav .first-contenir{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+ 
+}
+.names{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.first-contenir{
+ list-style: none;
+
+}
+
+form{
+ 
+    display: flex;
+    flex-wrap: wrap;
+}
+.required{
+    color: red;
+}
+.text-1{
+    display: inline;
+    margin-right: 79px; 
+}
+
+.choiceSubj{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.option{
+    width: 200px;
+    
+}
+ .champ{
+    width: 600px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #F2F0F0;
+                                                           
+}
+.text-2{
+    padding-right: 84px;
+    display: inline;
+  
+}
+.text-8{
+    padding-right: 114px;
+   
+}
+#selectechamp{
+    padding: 10px;
+}
+
+.nammargin{
+    margin-bottom: 20px;
+}
+.text-9{
+    padding-right: 44px;
+    
+}
+.champp{
+    width: 600px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #F2F0F0;
+}
+.text-4{
+   
+   
+    padding-right: 84px;
+}
+.text-6{
+    padding-right: 9px;
+}
+.field-textarea{
+    width: 600px;
+    border-radius: 5px;    
+        
+
+}
+.text-10{
+    margin-right: 110px;
+}
+.text-14{
+    margin-right: 150px;
+}
+.first-contenir2{
+    text-align: center;
+    list-style: none;
+}
+
+
+.submit{
+
+    text-align: center;
+    border:none;
+    outline: none;
+    padding: 10px 50px;
+    border-radius: 50px;  
+    font-weight: bold;
+    background-color: white;
+ 
+    box-shadow: 1px 1px 2px #D697FF, 0 0 1em rgb(247, 180, 94), 0 0 0.2em #000;
+    margin-top: 60px;
+    color:black;
+    font-size: 23px;
+    cursor: pointer;
+}
